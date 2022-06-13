@@ -1,16 +1,25 @@
-# quizz_us
+# quiz_us
 
-A new Flutter project.
+Quiz application developed in Flutter
+The application call the API https://opentdb.com to retrieve 5 questions and show one by one. 
+At the end, the program show the result
 
-## Getting Started
+## Keys points :
 
-This project is a starting point for a Flutter application.
+### Architecture used : 
+- Clean Architecture 
+- MVVM (Model View View Model)
 
-A few resources to get you started if this is your first Flutter project:
+### Dependencies : 
+- dio 
+- provider
+- hooks_riverpod
+- flutter_hooks
+- equatable
+- html_character_entities
+- meta
+- google_fonts
+- cupertino_icons
+- provider
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
