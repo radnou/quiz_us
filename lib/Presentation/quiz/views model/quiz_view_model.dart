@@ -3,12 +3,12 @@ import 'package:quiz_us/Presentation/quiz/views%20model/quiz_state.dart';
 import 'package:quiz_us/domain/entities/question.dart';
 import 'package:quiz_us/domain/usecases/quiz_usecase.dart';
 
-final QuizViewModelProvider =
+final quizViewModelProvider =
     StateNotifierProvider.autoDispose<QuizViewModel, QuizState>(
         (ref) => QuizViewModel(ref.read(quizUseCaseProvider)));
 
 final questionsProvider = FutureProvider.autoDispose<List<Question>>(
-    (ref) => ref.watch(QuizViewModelProvider.notifier).getQuestions());
+    (ref) => ref.watch(quizViewModelProvider.notifier).getQuestions());
 
 class QuizViewModel extends StateNotifier<QuizState> {
   QuizViewModel(this._useCase) : super(QuizState.initial());

@@ -1,5 +1,4 @@
 import 'package:equatable/equatable.dart';
-import 'package:flutter/material.dart';
 import 'package:quiz_us/domain/entities/question.dart';
 
 class QuestionResponse extends Equatable {
@@ -41,7 +40,7 @@ class QuestionResponse extends Equatable {
         category: map['category'],
         difficulty: map['difficulty'],
         question: map['question'],
-        correctAnswer: map['correctAnswer'],
-        incorrectAnswers: List<String>.from(map['incorrectAnswers'] ?? []));
+        correctAnswer: map['correct_answer'],
+        incorrectAnswers: List<String>.from(map['incorrect_answers'] ?? []));
   }
 }

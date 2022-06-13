@@ -8,11 +8,11 @@ import 'package:hooks_riverpod/hooks_riverpod.dart';
  * Implementation de l'interface du domaine 
  */
 //côte useCase => utilisation du provider
-final QuizRepositoryProvider = Provider<QuizRepository>(
-    (ref) => QuizRepositoryImpl(ref.read(RemoteApiProvider)));
+final quizRepositoryProvider = Provider<QuizRepository>(
+    (ref) => QuizRepositoryImpl(ref.read(remoteApiProvider)));
 
 class QuizRepositoryImpl extends QuizRepository {
-  // accès aux données
+  // accès aux webService
   final RemoteApi _remoteApi;
 
   QuizRepositoryImpl(this._remoteApi);
@@ -30,5 +30,6 @@ class QuizRepositoryImpl extends QuizRepository {
         .then((value) => value
             .map((uneQuestionResponse) => uneQuestionResponse.toEntity())
             .toList());
+    //uneQuestionResponse.toEntity()).toList());
   }
 }

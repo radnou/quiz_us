@@ -20,7 +20,7 @@ class QuizState extends Equatable {
         selectedAnswer: '', nbCorrect: 0, status: QuizStatus.initial);
   }
   /**
-   * Renvoie un bool si le status est correct ou incorrecte
+   * Renvoie un bool si le statut est correct ou incorrecte
    */
   bool get answered =>
       status == QuizStatus.correct || status == QuizStatus.incorrect;

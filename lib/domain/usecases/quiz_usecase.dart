@@ -6,7 +6,7 @@ import 'package:quiz_us/domain/entities/question.dart';
 import 'package:quiz_us/domain/repositories/quiz_repository.dart';
 
 final quizUseCaseProvider = Provider<QuizUseCase>(
-    (ref) => QuizUseCase(ref.read(QuizRepositoryProvider)));
+    (ref) => QuizUseCase(ref.read(quizRepositoryProvider)));
 
 class QuizUseCase {
   final QuizRepository _repository;

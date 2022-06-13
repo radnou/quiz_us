@@ -10,7 +10,7 @@ class MyApp extends HookConsumerWidget {
   const MyApp({Key? key}) : super(key: key);
 
   @override
-  Widget build(BuildContext context,WidgetRef ref) {
+  Widget build(BuildContext context, WidgetRef ref) {
     return MaterialApp(
       title: 'Quiz Us',
       debugShowCheckedModeBanner: false,
