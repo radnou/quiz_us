@@ -1,5 +1,5 @@
 name: quiz_us
-description: A new Flutter project.
+description: Quiz App .
 
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
@@ -38,6 +38,7 @@ dependencies:
   meta: ^1.7.0
   google_fonts: ^3.0.1
   cupertino_icons: ^1.0.2
+  provider: ^6.0.3
 
 
 dev_dependencies:
