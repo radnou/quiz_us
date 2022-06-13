@@ -1,6 +1,6 @@
 import 'package:equatable/equatable.dart';
 import 'package:flutter/material.dart';
-import 'package:quizz_us/domain/entities/question.dart';
+import 'package:quiz_us/domain/entities/question.dart';
 
 class QuestionResponse extends Equatable {
   final String category;

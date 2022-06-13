@@ -1,9 +1,13 @@
 import 'dart:io';
 
-import 'package:quizz_us/core/failure.dart';
-import 'package:quizz_us/data/models/request/question_request.dart';
-import 'package:quizz_us/data/models/response/question_response.dart';
+import 'package:hooks_riverpod/hooks_riverpod.dart';
+import 'package:quiz_us/core/failure.dart';
+import 'package:quiz_us/data/models/request/question_request.dart';
+import 'package:quiz_us/data/models/response/question_response.dart';
 import 'package:dio/dio.dart';
+
+//creation du provider
+final RemoteApiProvider = Provider<RemoteApi>((ref) => RemoteApi());
 
 class RemoteApi {
   static const String url = 'https://opentdb/com/api.php';

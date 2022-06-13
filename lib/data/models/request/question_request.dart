@@ -14,7 +14,7 @@ class QuestionRequest extends Equatable {
   @override
   List<Object> get props => [type, amount, category];
 
-  //pour les requêtes, besoin d'une map avec les paramètres dans l'url 
+  //pour les requêtes, besoin d'une map avec les paramètres dans l'url
   Map<String, dynamic> toMap() {
     final queryParameters = {
       'type': type,
