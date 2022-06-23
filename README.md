@@ -22,11 +22,4 @@ At the end, the program show the result
 - cupertino_icons
 - provider
 
-
-<<<<<<< HEAD
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-
-=======
->>>>>>> 5f6db077611bd49ef72ab954fa16114e66cd518e
+### Screenshots
