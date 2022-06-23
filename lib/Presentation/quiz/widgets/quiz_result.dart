@@ -3,6 +3,7 @@ import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:quiz_us/Presentation/common/widgets/customButton.dart';
 import 'package:quiz_us/Presentation/quiz/views%20model/quiz_state.dart';
 import 'package:quiz_us/Presentation/quiz/views%20model/quiz_view_model.dart';
+import 'package:sparkler_button/sparkler_button.dart';
 
 class QuizResults extends HookConsumerWidget {
   final QuizState state;
@@ -36,13 +37,26 @@ class QuizResults extends HookConsumerWidget {
         const SizedBox(
           height: 40.0,
         ),
-        CustomButton(
-          title: 'New Quiz',
-          onTap: () {
+        // CustomButton(
+        //   title: 'New Quiz',
+        //   onTap: () {},
+        // ),
+        SparklerButton(
+          title: const Text(
+            'New Quizz',
+            style: TextStyle(
+              color: Colors.white,
+              fontWeight: FontWeight.w300,
+              fontSize: 17.0,
+            ),
+          ),
+          onclick: () {
             ref.refresh(questionsProvider);
             ref.read(quizViewModelProvider.notifier).reset();
           },
-        ),
+          height: 50.0,
+          bgColor: Color(0xffE6812F),
+        )
       ],
     );
   }

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:quiz_us/Presentation/common/widgets/customButton.dart';
 import 'package:quiz_us/Presentation/common/widgets/error.dart';
@@ -20,9 +21,28 @@ class QuizScreen extends HookConsumerWidget {
 
     return Container(
       decoration: BoxDecoration(
-        color: Color(0xFF22293E),
+        color: Color(0xFF22293E), //0xFF22293E
       ),
       child: Scaffold(
+          appBar: AppBar(
+            backgroundColor: Color(0xFF22293E),
+            title: Text('Quizz Us',
+                style: GoogleFonts.notoSansCham(
+                  color: Colors.white,
+                  fontSize: 28.0,
+                  fontWeight: FontWeight.w400,
+                )),
+            actions: <Widget>[
+              IconButton(
+                icon: const Icon(Icons.add_alert),
+                tooltip: 'Show Snackbar',
+                onPressed: () {
+                  ScaffoldMessenger.of(context).showSnackBar(
+                      const SnackBar(content: Text('This is a snackbar')));
+                },
+              ),
+            ],
+          ),
           backgroundColor: Colors.transparent,
           body: questionFuture.when(
               data: (questions) => _buildBody(
