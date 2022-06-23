@@ -284,6 +284,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.0.3"
+  shimmer:
+    dependency: transitive
+    description:
+      name: shimmer
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "2.0.0"
   sky_engine:
     dependency: transitive
     description: flutter
@@ -296,6 +303,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.8.2"
+  sparkler_button:
+    dependency: "direct main"
+    description:
+      name: sparkler_button
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.0.1"
   stack_trace:
     dependency: transitive
     description:
