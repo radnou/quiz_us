@@ -1,8 +1,8 @@
 # quiz_us
 
-Quiz application developed in Flutter
+Quiz application developed in Flutter.
 The application call the API https://opentdb.com to retrieve 5 questions and show one by one. 
-At the end, the program show the result
+At the end, the program shows the result
 
 ## Keys points :
 
